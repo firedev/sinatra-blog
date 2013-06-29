@@ -1,0 +1,10 @@
+<h2><%= @title %></h2>
+
+<form action="/posts" method="post">
+	<label for="post_title">Title</label>
+	<input type="text" id="post_title" name="post[title]" value="<%= @post.title %>" /><br><br>
+	<label for="post_body">Body</label>
+	<textarea name="post[body]" id="post_body" cols="30" rows="10"><%= @post.body %></textarea>
+	<br><br>
+	<input type="submit">
+</form>
